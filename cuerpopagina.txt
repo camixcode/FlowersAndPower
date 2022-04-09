@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Artículos anime y series  populares - Hanbai</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+
+<!-- ORIGINALMENTE SE USABA ESTE JQUERY PERO EL SLIM NO SOPORTA LA FUNCION ANIMATE-->
+<!--<script src="js/jquery.slim.min.js"></script>-->
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/7d893b4362.js" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ <style>
+ /* Make the image fully responsive */
+ .carousel-inner img {
+width: 100%;
+height: 100%;
+ }
+ 
+ /* Logo responsive */
+ .responsive {
+width: 100%;
+height: 100%;
+ }
+ 
+ .container-fluid{
+background-color:#fff !important;
+width: 82.8%;
+        margin-top: 5%;
+margin-bottom:5%;
+z-index:1 !important;
+position;relative;
+
+ }
+ 
+ .esfera{
+ 
+ width:50px;
+ height:auto;
+ position: absolute;
+ z-index:999;
+ }
+
+
+
+
+</style>
+
+<script>
+    const showImage = () => {
+        document.getElementById("levi").style.display ='none';
+setTimeout( function(){
+                    document.getElementById("levi").style.display ='block';
+        },10000);
+
+    }
+</script>
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="images/logosnake_red_letter.png" style="z-index:2;position:absolute; bottom:-120%;"></img></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Inicio</a></li>
+<li class="divider-vertical-second-menu"></li>
+
+
+
+<li class="nav-item dropdown">
+<?php session_start(); if(isset($_SESSION['user_id'])){?>
+<a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><?php echo $_SESSION['user_id']." ".$_SESSION['user_apellido'];?></a>
+<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="cerrarS.php" id="cierra_session">Cerrar Sesión</a></li>
+                            </ul>
+<?php }else{ ?>
+<li class="nav-item"><a class="nav-link" href="#">Usuario</a></li>
+<li class="divider-vertical-second-menu"></li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cuenta de Usuario</a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#" id="ingresa">Ingresar</a></li>
+                                <li><a class="dropdown-item" href="#" id="crea_cuenta">Crear Cuenta</a></li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li><a class="dropdown-item" href="#" id="recuperaAcc">Recuperar Cuenta</a></li>
+                            </ul>
+                        </li>
+<li class="divider-vertical-second-menu"></li>
+                    </ul>
+<?php } ?>
+</li>
+
+
+
+<form class="d-flex">
+                        <button class="btn btn-outline-dark" type="submit">
+                            <i class="bi-cart-fill me-1"></i>
+                            Cart
+                            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Page content-->
+        <div class="container" style="position:relative; z-index:1;">
+            <div class="text-center mt-5">
+                 <div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+ 
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/jjk.jpg" alt="Los Angeles" width="720" height="340">
+    </div>
+    <div class="carousel-item">
+      <img src="images/kny.jpg" alt="Chicago" width="720" height="340">
+    </div>
+    <div class="carousel-item">
+      <img src="images/aot.jpg" alt="New York" width="720" height="340">
+    </div>
+  </div>
+ 
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+            </div>
+        </div>
+
+<div class="container-fluid">
+
+<img src="images/levi.png" style="z-index:2 !important;position:absolute; right: 1%;" id="levi" onClick="showImage()">
+<section class="py-5">
+            <div class="container px-4 px-lg-5 mt-5">
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Fancy Product</h5>
+                                    <!-- Product price-->
+                                    $40.00 - $80.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Special Item</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">$20.00</span>
+                                    $18.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Sale Item</h5>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">$50.00</span>
+                                    $25.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Popular Item</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    $40.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Sale Item</h5>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">$50.00</span>
+                                    $25.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Fancy Product</h5>
+                                    <!-- Product price-->
+                                    $120.00 - $280.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Special Item</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">$20.00</span>
+                                    $18.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Popular Item</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    $40.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+</div>
+
+
+
+<footer class="text-center text-white" style="background-color: #f1f1f1;" id="foot">
+  <!-- Grid container -->
+  <div class="container pt-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+ <!-- imagen urhara(puede cambiar la imagen)-->
+ <img
+        src="images/inosukefoot.png"
+        id="uraharaima"
+      ></img>
+
+      <!-- Facebook -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-linkedin"></i
+      ></a>
+      <!-- Github -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center text-dark-foot p-3" style="background-color: #000">
+    © 2020 Copyright:
+    <a class="text-dark-link" href="https://mdbootstrap.com/">MDBootstrap.com</a> Modificada por <a class="text-dark-link" href="mailto:jorgeavalosaravena@gmail.com"> Hellserk</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+
+<!--------------------------------------------------- MODALES -------------------------------------------------------------------------------------->
+<!-- Modal -->
+
+ <div class="modal fade" id="myModal" role="dialog">
+<div class="modal-dialog" style="z-index:1">
+
+ <!-- Modal content-->
+ <div class="modal-content" id="bodymodal">
+<div class="modal-header">
+ <h4 class="modal-title">Crea tu cuenta</h4>
+</div>
+<div class="modal-body">
+
+
+<form>
+<div class="form-group">
+<label for="pnombre">Nombre</label>
+<input type="text" class="form-control" id="pnombre" placeholder="Primer Nombre">
+</div>
+<div class="form-group">
+<label for="snombre">Nombre 2</label>
+<input type="text" class="form-control" id="snombre" placeholder="Segundo Nombre">
+</div>
+<div class="form-group">
+<label for="papellido">Apellido</label>
+<input type="text" class="form-control" id="papellido" placeholder="Apellido Paterno">
+</div>
+ <div class="form-group">
+<label for="sapellido">Apellido 2</label>
+<input type="text" class="form-control" id="sapellido" placeholder="Apellido Materno">
+</div>
+ <div class="form-group">
+<label for="telefonico">Teléfono</label>
+<input type="number" class="form-control" id="telefonico" placeholder="Teléfono(solo números)">
+</div>
+ <div class="form-group">
+<label for="correo">Correo</label>
+<input type="email" class="form-control" id="correo" placeholder="juan@ejemplo.com">
+ </div>
+ <div class="form-group">
+<label for="clave">Clave</label>
+<input type="password" class="form-control" id="clave" placeholder="Contraseña">
+ </div>
+ <div class="form-group">
+<label for="birthday">Fecha de Nacimiento:</label>
+<input type="date" class="form-control" id="nacimiento" name="nacimiento">
+ </div>
+ <!--<div class="form-group">
+<label for="exampleFormControlSelect1">Example select</label>
+<select class="form-control" id="exampleFormControlSelect1">
+ <option>1</option>
+ <option>2</option>
+ <option>3</option>
+ <option>4</option>
+ <option>5</option>
+</select>
+ </div>
+ 
+ <div class="form-group">
+<label for="exampleFormControlTextarea1">Example textarea</label>
+<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+ </div> -->
+</form>
+ 
+</div>
+<div class="modal-footer">
+<img src="images/itadori.png" id="itadori"></img>
+ <button type="button" class="btn btn-default" data-dismiss="modal" id="cierra_crea_cuenta" style="border: 1px solid #fff; color:#fff;">Cerrar</button>
+ <button type="button" class="btn btn-danger" data-dismiss="modal" id="envia_datos" style="border: 1px solid #fff;">Registrar</button>
+</div>
+ </div>
+ 
+</div>
+ </div>
+ 
+<!----------------------------------------------------------MODAL LOGIN------------------------------------------------------------------------------->
+
+<div class="modal fade" id="loginmodal" role="dialog">
+<div class="modal-dialog" style="z-index:1">
+
+ <!-- Modal content-->
+ <div class="modal-content" id="bodymodal_login">
+<div class="modal-header">
+ <h4 class="modal-title">Ingresar</h4>
+</div>
+<div class="modal-body">
+
+
+<form>
+ <div class="form-group">
+<label for="correo">Correo</label>
+<input type="email" class="form-control" id="correo_login" placeholder="juan@ejemplo.com">
+ </div>
+ <div class="form-group">
+<label for="clave">Clave</label>
+<input type="password" class="form-control" id="clave_login" placeholder="Contraseña">
+ </div>
+</form>
+ 
+</div>
+<div class="modal-footer">
+<img src="images/nezuko.png" id="nezuko"></img>
+ <button type="button" class="btn btn-default" data-dismiss="modal" id="cierra_login" style="background-color:#fff; border: 1px solid #000; color:#000S;">Cerrar</button>
+ <button type="button" class="btn btn-danger" data-dismiss="modal" id="login" style="background-color:#f600f6; border: 1px solid #fff;">Ingresar</button>
+</div>
+ </div>
+ 
+</div>
+ </div>
+ 
+ 
+ <!----------------------------------------------------------MODAL RECUPERA CUENTA------------------------------------------------------------------------------->
+
+<div class="modal fade" id="recupera_cuenta" role="dialog">
+<div class="modal-dialog" style="z-index:1">
+
+ <!-- Modal content-->
+ <div class="modal-content" id="bodymodal_recupera">
+<div class="modal-header">
+ <h4 class="modal-title">Recupera tu cuenta</h4>
+</div>
+<div class="modal-body">
+
+
+<form>
+ <div class="form-group">
+<label for="correo">Ingrese el correo con el que se registró en nuestro sitio web</label>
+<input type="email" class="form-control" id="correo_recupera" placeholder="juan@ejemplo.com">
+ </div>
+</form>
+ 
+</div>
+<div class="modal-footer">
+<img src="images/zenku.png" id="zenku"></img>
+ <button type="button" class="btn btn-default" data-dismiss="modal" id="cierra_recupera" style="background-color:#fff; border: 1px solid #000; color:#000S;">Cerrar</button>
+ <button type="button" class="btn btn-danger" data-dismiss="modal" id="recupera_account" style="background-color:#367e1f; border: 1px solid #fff;">Recuperar</button>
+</div>
+ </div>
+ 
+</div>
+ </div>
+
+    </body>
+</html>
+<!-- JQuery Redirect -->
+<script src="js/jquery.redirect.js"></script>
+<!-- Swal Alert -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+
+/*
+var t = 0;
+
+function moveit() {
+    t += 0.05;
+
+    var r = 100;
+    var xcenter = 100;
+    var ycenter = 100;
+    var newLeft = Math.floor(xcenter + (r * Math.cos(t)));
+    var newTop = Math.floor(ycenter + (r * Math.sin(t)));
+    $('#esfera').animate({
+        top: newTop,
+        left: newLeft,
+    }, 1, function() {
+        moveit();
+    });
+}
+
+$(document).ready(function() {
+    moveit();
+});
+
+*/
+
+/*
+$(document).ready(function() {
+    animateCircle();
+});
+
+var phi = 0;
+
+var int = 2 * (Math.PI) / 1000;
+
+function animateCircle() {
+
+    phi = (phi >= 2 * (Math.PI)) ? 0 : (phi + int);
+
+    var $m = 400 - 200 * Math.cos(phi);
+
+    var $n = 250 - 200 * Math.sin(phi);
+
+    $("#esfera").animate({
+        marginLeft: $m + 'px',
+        marginTop: $n + 'px'
+    }, 1, animateCircle);
+
+}*/
+
+
+
+$("#envia_datos").click(function() {
+
+var pnombre = $("#pnombre").val();
+var snombre = $("#snombre").val();
+var papellido = $("#papellido").val();
+var sapellido = $("#sapellido").val();
+var telefonico = $("#telefonico").val();
+var correo = $("#correo").val();
+var clave = $("#clave").val();
+var nacimiento = $("#nacimiento").val();
+$.ajax({
+ url: "WS/registro.php",
+ method: "POST",
+ data:{pnombre:pnombre,snombre:snombre,papellido:papellido,sapellido:sapellido,telefonico:telefonico,correo:correo,clave:clave,nacimiento:nacimiento},
+ success: function (response) {
+ 
+ switch (response) {
+case 'ok':
+swal({
+ title: "Cuenta Creada!",
+ text: "Su cuenta ha sido creada exitosamente, te hemos enviado un correo a la cuenta registrada!",
+ icon: "success",
+});
+$('#myModal').modal('toggle');
+break;
+case 'existe':
+swal({
+ title: "Cuenta Existente!",
+ text: "Ya existe una cuenta asociada a este email o número telefonico, porfavor intente con otro email o telefono!",
+ icon: "warning",
+});
+break;
+case 'vacio':
+swal({
+ title: "Campos Vacios!",
+ text: "Uno o más campos no han sido completados!",
+ icon: "warning",
+});
+break;
+default:
+swal({
+ title: "Error!",
+ text: "Ocurrio un error en la aplicacion, porfavor contacte a la administración del sitio!",
+ icon: "error",
+});
+$('#myModal').modal('toggle');
+}
+ 
+ }
+})
+
+
+//siempre olvido como se hace el done, lo guardare aca
+/*.done(function() {
+     $( this ).addClass( "done" );
+});*/
+
+});
+
+
+
+$("#login").click(function() {
+   var myModal = $('#loginmodal');
+   var correo = $("#correo_login").val();
+   var clave = $("#clave_login").val();
+  $.ajax({
+ url: "WS/login.php",
+ method: "POST",
+ data:{correo:correo,clave:clave},
+ success: function (response) {
+ response = JSON.parse(response);
+ console.log(response);
+if(response.ESTADO == "ok"){
+
+swal({
+ title: "Bienvenido "+response.NOMBRE+" "+response.PAPELLIDO+"!",
+ text: "Serás redirijido para vincular tu cuenta!",
+ icon: "success",
+ buttons: true
+}).then(function(value) {
+if(value === true) {
+ myModal.modal('hide');
+ var redirect = 'index.php';
+         $.redirect(redirect);
+}
+ });
+
+
+
+}else if(response.ESTADO == "vacio"){
+
+swal({
+ title: "Campos Vacios!",
+ text: "Uno o más campos no han sido completados!",
+ icon: "warning",
+});
+
+
+}else if(response.ESTADO == "userpass_wrong"){
+
+
+swal({
+ title: "Datos Incorrectos!",
+ text: "Usuario o clave no coinciden con nuestros registros!",
+ icon: "warning",
+});
+
+}else{
+
+swal({
+ title: "Error!",
+ text: "Ocurrio un error en la aplicacion, porfavor contacte a la administración del sitio!",
+ icon: "error",
+});
+$('#loginmodal').modal('toggle');
+
+
+}
+ 
+ }
+ 
+  });
+ 
+ 
+
+
+});
+
+
+$("#recupera_account").click(function() {
+var myModal2 = $('#recupera_cuenta');
+var recuperar_cuenta = $("#correo_recupera").val();
+$.ajax({
+ url: "WS/recuperaAcc.php",
+ method: "POST",
+ data:{recuperar_cuenta:recuperar_cuenta},
+ success: function (response) {
+ 
+   switch (response) {
+case 'correo_no_existe':
+swal({
+ title: "Cuenta no encontrada!",
+ text: "No existe este correo asociado a nuestro sitio!",
+ icon: "warning",
+});
+break;
+case 'enviado':
+swal({
+ title: "Contraseña Enviada!",
+ text: "Hemos enviado su clave al correo registrado!",
+ icon: "success",
+ buttons: true
+}).then(function(value) {
+if(value === true) {
+ myModal2.modal('hide');
+ var redirect = 'index.php';
+         $.redirect(redirect);
+}
+ });
+break;
+default:
+swal({
+ title: "Error!",
+ text: "Ocurrio un error y no se pudo enviar el correo, intenete de nuevo porfavor en unos minutos!",
+ icon: "error",
+ buttons: true
+}).then(function(value) {
+if(value === true) {
+ myModal2.modal('hide');
+ var redirect = 'index.php';
+         $.redirect(redirect);
+}
+ });
+}
+
+ }
+ 
+   });
+
+
+});
+
+
+$("#recuperaAcc").click(function() {
+$('#recupera_cuenta').modal('show');
+});
+
+$("#cierra_recupera").click(function() {
+$('#recupera_cuenta').modal('toggle');
+});
+
+
+
+$("#ingresa").click(function() {
+   $('#loginmodal').modal('show');
+
+});
+
+$("#cierra_login").click(function() {
+   $('#loginmodal').modal('toggle');
+
+});
+
+$("#crea_cuenta").click(function() {
+   $('#myModal').modal('show');
+});
+
+
+$("#cierra_crea_cuenta").click(function() {
+   $('#myModal').modal('toggle');
+});
+
+
+</script>
