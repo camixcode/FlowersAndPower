@@ -123,3 +123,32 @@ h1,h2,h3,h4,h5, button, .amiibo-name{
     background-color: rgb(224, 144, 24);
     background-size: 50px 50px;
 }
+
+
+
+#body{
+    background-color: aquamarine;
+}
+
+#divr{
+    margin-top: 50px;
+    margin-left: 300px;
+    text-align: center;
+    
+
+}
+
+#card{
+    border :solid 5px #016787;
+}
+
+#cardid{
+    text-align: left;
+    margin-left: 150px;
+    line-height: 30px;
+}
+
+#btnCrearUsuario{
+
+    margin-left: 240px;
+}
