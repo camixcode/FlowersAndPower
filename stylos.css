@@ -5,6 +5,13 @@ h1,h2,h3,h4,h5, button, .amiibo-name{
 #navbar{
     z-index: 1;
 }
+
+
+#nav{
+    background-color: rgb(150, 228, 176);
+}
+
+
 #imagenPerfil_izquierda{
     float: left;
     vertical-align: middle;
