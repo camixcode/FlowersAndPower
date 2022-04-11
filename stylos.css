@@ -46,7 +46,7 @@ h1,h2,h3,h4,h5, button, .amiibo-name{
 }
 #separator-ribbon .content{
     width: 150%;
-    height: 150px;
+    height: 80px;
     margin-left: -25%;
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
