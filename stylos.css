@@ -114,13 +114,22 @@ h1,h2,h3,h4,h5, button, .amiibo-name{
 }
 
 #categorias{
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 50px;
     text-align: center;
     }
 
 #imagencategoria{
     vertical-align: middle;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#titulocard{
+
+    font-family: fantasy;
+
 }
 
 #birthday img{
