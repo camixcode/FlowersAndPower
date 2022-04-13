@@ -34,6 +34,7 @@ h1,h2,h3,h4,h5, button, .amiibo-name{
     margin-bottom: 60px;
     font: small-caps 100%/200% serif;
     text-align: center;
+    font-size: 20px;
 }
 .slide{
     margin: top 10px;
