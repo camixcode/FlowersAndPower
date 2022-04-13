@@ -36,6 +36,16 @@ h1,h2,h3,h4,h5, button, .amiibo-name{
     text-align: center;
     font-size: 20px;
 }
+#comprastxt{
+  color: black;
+}
+
+#compras:hover{
+ 
+    transform: scale(1.05);
+
+
+}
 .slide{
     margin: top 10px;
 }
