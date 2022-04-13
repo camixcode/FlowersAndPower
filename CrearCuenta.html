@@ -73,8 +73,63 @@
       </div>
 </nav>
 
-     
+   <!-- Formulario! --> 
 <body>
+  
+
+   <div class="container-fluid" id="divr">
+    <div id="card" class="card w-75 text-dark bg-light">
+      <div class="card-header ">
+        <h2>Crear usuario</h2>
+      </div>
+      <div id="cardid" class="card-body">
+        <form class="row g-3">
+          <div class="col-md-10">
+            <label for="validationDefault01" class="form-label"><h5>Primer nombre</h5></label>
+            <input type="text" class="form-control" id="formGroupExampleInput" required>
+            <label for="validationDefault01" class="form-label"><h5>Segundo nombre</h5></label>
+            <input type="text" class="form-control" id="formGroupExampleInput" required>
+            <label for="validationDefault02" class="form-label"><h5>Apellido(s)</h5></label>
+            <input type="text" class="form-control" id="validationDefault02" required>
+            <label for="validationDefaultUsername" class="form-label"><h5>Correo</h5></label>
+            <div class="input-group">
+              <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" placeholder="ejemplo@correo.cl" required>
+              <span class="input-group-text" id="inputGroupPrepend2">@</span>
+            </div>
+            <label for="validationDefault03" class="form-label"><h5>Region</h5></label>
+            <select class="form-select" id="validationDefault04" required>
+              <option selected disabled value="">Seleccione una opcion</option>
+              <option>Santiago</option>
+              <option>Rio de janeiro</option>
+              <option>New york</option>
+            </select>
+             <label for="validationDefault04" class="form-label"><h5>Pais</h5></label>
+            <select class="form-select" id="validationDefault04" required>
+              <option selected disabled value="">Seleccione una opcion</option>
+              <option>Chile</option>
+              <option>Estados unidos</option>
+              <option>Brazil</option>
+            </select>
+            <label for="validationDefault05" class="form-label"><h5>Numero celular</h5></label>
+            <input type="text" class="form-control" id="validationDefault05" required>
+            <br>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+              <label class="form-check-label" for="invalidCheck2">
+                Aceptar terminos y condiciones
+              </label>
+            </div>
+            <br>
+            <button id="btnCrearUsuario" class="btn btn-primary" type="submit">Registrarme</button>
+        </form>
+      </div> 
+    </div>
+  </div> 
+</div> 
+</body>
+
+
+<!--- Footer-->
     <footer class="container-fluid bg-dark text-white pt-5 pb-4">
       <div class="container-fluid text-center text-md-left">
   
@@ -129,7 +184,6 @@
           </p>
         </div> 
       </div>
-
       <hr class="mb-4">
       <div class="row align-item-center">
         <div class="col-md-7 col-lg-8">
@@ -143,58 +197,5 @@
     </div>
     </footer>
 </body>
-
-   <!-- Formulario! --> 
-  <div class="container-fluid" id="divr">
-    <div id="card" class="card w-75 text-dark bg-light">
-      <div class="card-header ">
-        <h2>Crear usuario</h2>
-      </div>
-      <div id="cardid" class="card-body">
-        <form class="row g-3">
-          <div class="col-md-10">
-            <label for="validationDefault01" class="form-label"><h5>Primer nombre</h5></label>
-            <input type="text" class="form-control" id="formGroupExampleInput" required>
-            <label for="validationDefault01" class="form-label"><h5>Segundo nombre</h5></label>
-            <input type="text" class="form-control" id="formGroupExampleInput" required>
-            <label for="validationDefault02" class="form-label"><h5>Apellido(s)</h5></label>
-            <input type="text" class="form-control" id="validationDefault02" required>
-            <label for="validationDefaultUsername" class="form-label"><h5>Correo</h5></label>
-            <div class="input-group">
-              <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" placeholder="ejemplo@correo.cl" required>
-              <span class="input-group-text" id="inputGroupPrepend2">@</span>
-            </div>
-            <label for="validationDefault03" class="form-label"><h5>Region</h5></label>
-            <select class="form-select" id="validationDefault04" required>
-              <option selected disabled value="">Seleccione una opcion</option>
-              <option>Santiago</option>
-              <option>Rio de janeiro</option>
-              <option>New york</option>
-            </select>
-             <label for="validationDefault04" class="form-label"><h5>Pais</h5></label>
-            <select class="form-select" id="validationDefault04" required>
-              <option selected disabled value="">Seleccione una opcion</option>
-              <option>Chile</option>
-              <option>Estados unidos</option>
-              <option>Brazil</option>
-            </select>
-            <label for="validationDefault05" class="form-label"><h5>Numero celular</h5></label>
-            <input type="text" class="form-control" id="validationDefault05" required>
-            <br>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-              <label class="form-check-label" for="invalidCheck2">
-                Aceptar terminos y condiciones
-              </label>
-            </div>
-            <br>
-            <button id="btnCrearUsuario" class="btn btn-primary" type="submit">Registrarme</button>
-        </form>
-      </div> 
-    </div>
-  </div>
-   <!--- Footer-->
-
-
 
 </html>
