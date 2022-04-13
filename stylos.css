@@ -119,7 +119,7 @@ h1,h2,h3,h4,h5, button, .amiibo-name{
 
 #categorias{
 
-    margin-left: 50px;
+    margin-left: 100px;
     margin-right: 50px;
     margin-bottom: 50px;
 }
@@ -265,4 +265,9 @@ h1,h2,h3,h4,h5, button, .amiibo-name{
 
     font-family: "Consolas", monospace;
 
+}
+
+#carouselExampleFade{
+
+    height: 700px;
 }
