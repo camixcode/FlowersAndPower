@@ -2,6 +2,7 @@ h1,h2,h3,h4,h5, button, .amiibo-name{
     font-family: 'Bitter', serif;
 
 }
+
 #ini{
     display: flex;
     align-items: center;
@@ -14,12 +15,11 @@ h1,h2,h3,h4,h5, button, .amiibo-name{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url();
+    ,url("https://agroingeniacanarias.com/wp-content/uploads/2018/10/asesoramiento-en-jardineria-1-1080x675.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
-
 
 
 #navbar{
@@ -116,11 +116,11 @@ h1,h2,h3,h4,h5, button, .amiibo-name{
 #categorias{
     margin-left: 50px;
     margin-right: 50px;
-    text-align: center;
-    }
+}
 
-#imagencategoria{
-    vertical-align: middle;
+#titulocategoria{
+    text-align: center;
+
 }
 
 #birthday img{
