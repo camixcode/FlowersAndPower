@@ -242,6 +242,7 @@ h1,h2,h3,h4,h5, button, .amiibo-name{
 
 #card{
     border :solid 5px #016787;
+    margin-bottom: 30px;
 }
 
 #cardid{
