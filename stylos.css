@@ -80,7 +80,7 @@ h1,h2,h3,h4,h5, button, .amiibo-name{
 
 #games{
     background: rgb(255,255,255);
-    background: url(bg-02.png),  linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(99,196,255,1) 57%);
+    background:  linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(99,196,255,1) 57%);
     background-repeat: repeat-x;
     background-size: 75%;
     margin-top: -20px;
