@@ -93,6 +93,15 @@ h1,h2,h3,h4,h5, button, .amiibo-name{
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
+#categorias{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#titulocategoria{
+    text-align: center;
+
+}
 
 #birthday img{
     position: relative;
