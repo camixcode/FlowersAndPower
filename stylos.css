@@ -232,6 +232,11 @@ h1,h2,h3,h4,h5, button, .amiibo-name{
     background-color: aquamarine;
 }
 
+#imagenseguimiento{
+
+    margin-top: 50px;
+    margin-left: 50px;
+}
 #divr{
     margin-top: 50px;
     margin-left: 300px;
@@ -254,4 +259,10 @@ h1,h2,h3,h4,h5, button, .amiibo-name{
 #btnCrearUsuario{
 
     margin-left: 240px;
+}
+
+#textoseg{
+
+    font-family: "Consolas", monospace;
+
 }
