@@ -53,9 +53,9 @@
             </div>
             <form action="enviado.html" method="GET" class="formulario">
 
-                <input type="text" name="nombre" placeholder="Nombre" id="nombre">
-                <input type="text" name="correo" placeholder="Correo electrónico" id="correo">
-                <input type="text" name="asunto" placeholder="Asunto" id="asunto">
+                <input type="text" name="nombre" placeholder="nombre" id="nombre">
+                <input type="text" name="correo" placeholder="correo" id="correo">
+                <input type="text" name="asunto" placeholder="asunto" id="asunto">
                 <textarea name="mensaje" id="mensaje" placeholder="Mensaje"></textarea>
                 <button type="button" onclick="validarFormulario()" >Enviar</button>
 
