@@ -24,20 +24,16 @@
                 <form action="">
                     <p>
                         <label>*Nombre y Apellido: </label>
-                        <input type="text" name="fullname">
+                        <input type="nombre" name="nombre">
                     </p>
                     <p>
                         <label>*Correo Electronico: </label>
-                        <input type="email" name="email">
-                    </p>
-                    <p>
-                        <label>Celular:</label>
-                        <input type="tel" name="phone">
+                        <input type="correo" name="correo">
                     </p>
                 
                     <p class="block">
                        <label>*Mensaje: </label> 
-                        <textarea name="message" rows="3"></textarea>
+                        <textarea name="asunto" rows="3"></textarea>
                     </p>
                     <p class="block">
                         <button>
@@ -55,9 +51,20 @@
                 </ul>
                 
             </div>
+            <form action="enviado.html" method="GET" class="formulario">
+
+                <input type="text" name="nombre" placeholder="Nombre" id="nombre">
+                <input type="text" name="correo" placeholder="Correo electrónico" id="correo">
+                <input type="text" name="asunto" placeholder="Asunto" id="asunto">
+                <textarea name="mensaje" id="mensaje" placeholder="Mensaje"></textarea>
+                <button type="button" onclick="validarFormulario()" >Enviar</button>
+
+
+            </form>
         </div>
 
     </div>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
