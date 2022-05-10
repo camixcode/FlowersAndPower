@@ -279,8 +279,22 @@ h1,h2,h3,h4,h5, button, .amiibo-name{
     padding-top: 20px;
     padding-bottom: 20px;
 }
+<<<<<<< Updated upstream
 
 #galeriaP{
   
     grid-template-columns: repeat(auto-fill,minmax(min(100%,25rem),1fr));
 }
+=======
+form {
+    width: 450px;
+    min-height: 500px;
+    height: auto;
+    border-radius: 5px;
+    margin: 2% auto;
+    box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+    padding: 2%;
+    background-image: linear-gradient(-225deg, #E3FDF5 50%, #FFE6FA 50%);
+}
+
+>>>>>>> Stashed changes
