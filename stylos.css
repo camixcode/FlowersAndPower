@@ -279,3 +279,8 @@ h1,h2,h3,h4,h5, button, .amiibo-name{
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+#galeriaP{
+  
+    grid-template-columns: repeat(auto-fill,minmax(min(100%,25rem),1fr));
+}
