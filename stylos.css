@@ -272,3 +272,9 @@ h1,h2,h3,h4,h5, button, .amiibo-name{
 #imgCarrusel{
     height: 700px;
 }
+
+#divPerfil{
+    background-color: #d7d7d7;
+    border:double;
+    ;
+}
