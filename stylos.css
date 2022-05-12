@@ -28,11 +28,7 @@ h1,h2,h3,h4,h5, button, .amiibo-name{
 }
 
 #parrafo{
-    margin-top: 50px;
-    margin-left: 300px;
-    margin-right: 300px;
-    margin-bottom: 60px;
-    font: small-caps 100%/200% serif;
+    padding: 10px;
     text-align: center;
     font-size: 20px;
 }
@@ -118,7 +114,10 @@ h1,h2,h3,h4,h5, button, .amiibo-name{
 }
 
 #categorias{
+    display: grid;
+    gap: 50px;
 
+    grid-template-columns: repeat(auto-fill,minmax(15rem,1fr));
     margin-left: 100px;
     margin-right: 50px;
     margin-bottom: 50px;

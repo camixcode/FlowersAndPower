@@ -17,69 +17,83 @@
   <link rel="stylesheet" href="min.css">
   <link rel="stylesheet" href="stylos.css">
   <link rel="stylesheet" href="popper.min.js">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 
 </head>
 
 <body>
   <!--<h1>FLOWERSANDPOWER</h1>-->
   <!--- Navbar Superior-->
-  <nav class="navbar navbar-expand-sm navbar-dark bg-light">
+  <nav class="navbar navbar-expand-sm navbar-dark bg-white">
     <div class="container-fluid">
 
 
-        <img src="archivos iniciales/Fotos/FotosPagPrincipal/WhatsApp_Image_2022-04-07_at_4.59.49_PM-removebg-preview.png" alt="" width="100">
-        <h6><i>Flowers and Power </i></h6>           
-        <a  class="navbar-brand" >
-        </a>
-        <button 
-        class="navbar-toggler" 
-        type="button" 
-        data-bs-toggle="collapse" 
-        data-bs-target="#navbarSupportedContent" 
-        aria-controls="#navbarSupportedContent" 
-        aria-expanded="false" 
-        aria-label="Toggle navigation">
+      <img src="archivos iniciales/Fotos/FotosPagPrincipal/WhatsApp_Image_2022-04-07_at_4.59.49_PM-removebg-preview.png"
+        alt="" width="100">
+      <h6><i>Flowers and Power </i></h6>
+      <a class="navbar-brand">
+      </a>
 
-                <span class="navbar-toggler-icon"></span>
-        </button> 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="nav nav-tabs">
+      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon bg-dark"></span>
+
+
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav nav-pills nav-fill">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index_home.html">Pagina Principal</a>
+            <a class="nav-link " aria-current="page" href="index_home.html">Pagina Principal</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Cuenta Usuario</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="InicioSesion1.html">Acceder</a></li>
-                  <li><a class="dropdown-item" href="#" data-toggle="modal" data-target="#modaldesconnexion" id="modaldesconnexionb" >Desconectar Cuenta</a></li>
-                  <li><a class="dropdown-item" href="CrearCuenta.html">Crear Cuenta de Usuario</a></li>
-                  <li><a class="dropdown-item" href="Seguimiento.html">Seguimiento de Compra</a></li>
-                  <li><a class="dropdown-item" href="HistoricoCompra.html">Historico de Compras</a></li>
-                  
-                </ul>
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+              aria-expanded="false">Cuenta Usuario</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="InicioSesion1.html">Acceder</a></li>
+              <li><a class="dropdown-item" href="#" data-toggle="modal" data-target="#modaldesconnexion"
+                  id="modaldesconnexionb">Desconectar Cuenta</a></li>
+              <li><a class="dropdown-item" href="CrearCuenta.html">Crear Cuenta de Usuario</a></li>
+              <li><a class="dropdown-item" href="Seguimiento.html">Seguimiento de Compra</a></li>
+              <li><a class="dropdown-item" href="HistoricoCompra.html">Historico de Compras</a></li>
+
+            </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="Producto.html" role="button" aria-expanded="false">Producto</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="Producto.html">Ver Productos</a></li>
-                  <li><a class="dropdown-item" href="Categoria.html">Ver Categorias</a></li>
-                </ul>
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="Producto.html" role="button"
+              aria-expanded="false">Producto</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="Producto.html">Ver Productos</a></li>
+              <li><a class="dropdown-item" href="Categoria.html">Ver Categorias</a></li>
+            </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="Contacto.html">Contacto</a>
+            <a class="nav-link " aria-current="page" href="Contacto.html">Contacto</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="Nosotros.html">Nosotros</a>
+            <a class="nav-link " aria-current="page" href="Nosotros.html">Nosotros</a>
           </li>
-      </ul>
-      
-    </div>
-    <div id="compras">
-    <img src="archivos iniciales/Fotos/FotosPagPrincipal/carrito.jpg" alt="" width="50" height="50">           
-        <a id="comprastxt" class="navbar-brand" href="#"> <i>Compras </i>
-        </a>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-primary" type="submit">Search</button>
+        </form>
+        <br>
+        
       </div>
-</nav>
+      <form class="d-flex">
+        <button class="btn btn-outline-dark" type="submit">
+          <i class="bi-cart-fill me-1"></i>
+          <img src="464-4646442_carrito-de-compras-carro-de-compras-blanco-clipart.png" alt="" width="30" height="30">
+          Compras
+          <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+        </button>
+      </form>
+    </div>
+    </form>
+  </nav>
   <!--- Logo-->
 
   
@@ -114,26 +128,18 @@
 
 
   <!--- Categorias-->
-  <div id="form">
-    <div class="container-md p-5">
-      <div class="row pt-5">
-        <div>
-          <div>
+
             <h1 id="texto"><strong>Más verde a tu vida</strong> </h1>
-          </div>
-          <div>
+         
             <p id="parrafo">Inspírate con nuestros árboles, plantas, flores, maceteros y encuentra lo que necesitas para darle más verde a
               tu vida. Si no encuentras en nuestro catálogo la planta que andabas buscando, escríbenos a
               contacto@flowersandpower.cl y haremos lo posible por tenerla para ti.</p>
-          </div>
-        </div>
+      
         <h3 id="texto" class=" text-center pb-5 pt-5 h1"> <strong> Productos más vendidos</strong></h3>
-      </div>
-    </div>
-  </div>
+    
 
-  <div id="categorias" class="row">
-    <div class="col-3">
+  <div id="categorias">
+    <div >
       <div class="card w-40 card-border mb-2"> 
       <div class="card h-100">
         <img src="archivos iniciales/Fotos/FotosProductos/P_1.jpg" class="card-img-top" alt="...">
@@ -149,7 +155,7 @@
       </div>
     </div>
 
-    <div class="col-3">
+    <div >
       <div class="card w-40 card-border mb-2">
       <div class="card h-100">
         <img src="archivos iniciales/Fotos/FotosProductos/P_2.jpg" class="card-img-top" alt="...">
@@ -164,7 +170,7 @@
         </div>
       </div>
     </div>
-    <div class="col">
+    <div >
       <div class="card w-40 card-border mb-2">
       <div class="card h-100">
         <img src="archivos iniciales/Fotos/FotosProductos/P_4.jpg" class="card-img-top" alt="...">
@@ -179,7 +185,7 @@
         </div>
       </div>
     </div>
-    <div class="col">
+    <div >
       <div class="card w-40 card-border mb-2">
       <div class="card h-100">
         <img src="archivos iniciales/Fotos/FotosProductos/P_6.jpg" class="card-img-top" alt="...">
