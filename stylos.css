@@ -276,6 +276,19 @@ h1,h2,h3,h4,h5, button, .amiibo-name{
 }
 
 #grillaCcs{
-    display: grid;
+display: grid;
+gap: 50px;
 
+    grid-template-columns: repeat(auto-fill,minmax(20rem,1fr));
+
+}
+
+
+#imagenSegui{
+    width: 500px;
+}
+@media screen and (max-width:1000px) {
+    #imagenSegui{
+        width: 100%;
+    }
 }
