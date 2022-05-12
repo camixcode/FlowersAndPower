@@ -28,11 +28,7 @@ h1,h2,h3,h4,h5, button, .amiibo-name{
 }
 
 #parrafo{
-    margin-top: 50px;
-    margin-left: 300px;
-    margin-right: 300px;
-    margin-bottom: 60px;
-    font: small-caps 100%/200% serif;
+    padding: 10px;
     text-align: center;
     font-size: 20px;
 }
@@ -118,7 +114,10 @@ h1,h2,h3,h4,h5, button, .amiibo-name{
 }
 
 #categorias{
+    display: grid;
+    gap: 50px;
 
+    grid-template-columns: repeat(auto-fill,minmax(15rem,1fr));
     margin-left: 100px;
     margin-right: 50px;
     margin-bottom: 50px;
@@ -224,6 +223,7 @@ h1,h2,h3,h4,h5, button, .amiibo-name{
     background: url(../img/bg-04.png);
     background-color: rgb(224, 144, 24);
     background-size: 50px 50px;
+    width: 100%;
 }
 
 
@@ -276,6 +276,33 @@ h1,h2,h3,h4,h5, button, .amiibo-name{
 }
 
 #grillaCcs{
-    display: grid;
+display: grid;
+gap: 50px;
 
+    grid-template-columns: repeat(auto-fill,minmax(20rem,1fr));
+
+}
+
+
+#imagenSegui{
+    width: 500px;
+}
+@media screen and (max-width:1000px) {
+    #imagenSegui{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:800px) {
+    #imagenSegui{
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    #mapa{
+        width: 330px;
+        height: 330px;
+    }
 }
