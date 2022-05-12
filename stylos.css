@@ -223,6 +223,7 @@ h1,h2,h3,h4,h5, button, .amiibo-name{
     background: url(../img/bg-04.png);
     background-color: rgb(224, 144, 24);
     background-size: 50px 50px;
+    width: 100%;
 }
 
 
@@ -289,5 +290,19 @@ gap: 50px;
 @media screen and (max-width:1000px) {
     #imagenSegui{
         width: 100%;
+    }
+}
+
+@media screen and (min-width:800px) {
+    #imagenSegui{
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    #mapa{
+        width: 330px;
+        height: 330px;
     }
 }
