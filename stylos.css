@@ -233,11 +233,6 @@ h1,h2,h3,h4,h5, button, .amiibo-name{
     
 }
 
-#imagenseguimiento{
-
-    margin-top: 50px;
-    margin-left: 50px;
-}
 
 
 #card{
@@ -278,4 +273,9 @@ h1,h2,h3,h4,h5, button, .amiibo-name{
     border:double;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+#grillaCcs{
+    display: grid;
+
 }
