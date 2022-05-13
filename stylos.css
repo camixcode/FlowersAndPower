@@ -287,18 +287,17 @@ gap: 50px;
 #imagenSegui{
     width: 500px;
 }
-@media screen and (max-width:1000px) {
+@media screen and (max-width:800px) {
     #imagenSegui{
         width: 100%;
     }
 }
-
-@media screen and (min-width:800px) {
+@media screen and (min-width:1200px) {
     #imagenSegui{
-        width: 500px;
-        height: 500px;
+        width: 200%;
     }
 }
+
 
 @media screen and (max-width:1000px) {
     #mapa{
