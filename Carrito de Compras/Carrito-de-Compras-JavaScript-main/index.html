@@ -64,6 +64,19 @@
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-primary" type="submit">Search</button>
         </form>
+
+
+        <form class="d-flex">
+
+            <button class="btn btn-outline-dark" type="submit">
+    <i class="bi-cart-fill me-1"></i>
+    <img src="./images/464-4646442_carrito-de-compras-carro-de-compras-blanco-clipart.png" alt="" width="30" height="30">
+    Compras
+    <span class="badge bg-dark text-white ms-1 rounded-pill"><p class="count-product">0</p></span>
+  </button>
+        </form>
+
+
         <form class="d-flex">
 
             <div>
@@ -81,8 +94,21 @@
         </form>
     </nav>
 </head>
+<!--<h1>nav de carrito</h1>-->
 
 <body>
+
+    <div>
+        <img onmouseover="showCart(this)" class="cart" src="images/464-4646442_carrito-de-compras-carro-de-compras-blanco-clipart.png" alt="">
+        <p class="count-product">0</p>
+    </div>
+    <div class="cart-products" id="products-id">
+        <h3>Mi carrito</h3>
+        <div class="card-items">
+        </div>
+        <h2>Total: <strong class="price-total">0</strong> $</h2>
+    </div>
+    </div>
     <header>
         <div class="header-section container navbar-dark bg-dark">
 
