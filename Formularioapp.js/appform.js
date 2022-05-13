@@ -4,8 +4,7 @@ function validarFormulario() {
 
 
 
-    var boleta = $('#boleta').val(),
-        email = $('#email').val()
+    var boleta = $('#boleta').val()
 
 
 
