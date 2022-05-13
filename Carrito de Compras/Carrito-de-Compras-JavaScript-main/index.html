@@ -73,133 +73,122 @@
     <img onmouseover="showCart(this)" class="cart" src="images/464-4646442_carrito-de-compras-carro-de-compras-blanco-clipart.png" alt="">
         <p class="count-product">0</p>
   </button>
+
         </form>
+        <div class="cart-products" id="products-id">
+            <p class="close-btn" onclick="closeBtn()">X</p>
+            <h3>Mi carrito</h3>
+            <div class="card-items">
+            </div>
+            <h2>Total: <strong class="price-total">0</strong> $</h2>
+        </div>
 
 
-        
     </nav>
 </head>
 <!--<h1>nav de carrito</h1>-->
 
-<body>
 
-    <header>
-        <div class="header-section container navbar-dark bg-dark">
 
+
+
+
+<section class="container">
+    <div class="products">
+        <div class="carts">
             <div>
-                <img onmouseover="showCart(this)" class="cart" src="images/464-4646442_carrito-de-compras-carro-de-compras-blanco-clipart.png" alt="">
-                <p class="count-product">0</p>
+                <img src="./images/products/P_1.jpg" alt="">
+                <p><span>5.99</span>$</p>
             </div>
-            <div class="cart-products" id="products-id">
-                <p class="close-btn" onclick="closeBtn()">X</p>
-                <h3>Mi carrito</h3>
-                <div class="card-items">
-                </div>
-                <h2>Total: <strong class="price-total">0</strong> $</h2>
-            </div>
+            <p class="title">Pack Herramientas de Cultivo</p>
+            <a href="" data-id="1" class="btn-add-cart">Comprar</a>
         </div>
-    </header>
+        <div class="carts">
+            <div>
+                <img src="./images/products/P_2.jpg" alt="">
+                <p><span>6.90</span>$</p>
+            </div>
+            <p class="title"> Fertilizante Fert Plant</p>
+            <a href="" class="btn-add-cart" data-id="2">Comprar</a>
+        </div>
+        <div class="carts">
+            <div>
+                <img src="./images/products/P_3.jpg" alt="">
+                <p><span>15.50</span>$</p>
+            </div>
+            <p class="title">Organizador de Herramientas Ajustable</p>
+            <a href="" data-id="3" class="btn-add-cart">Comprar</a>
+        </div>
+        <div class="carts">
+            <div>
+                <img src="./images/products/P_4.jpg" alt="">
+                <p><span>4.20</span>$</p>
+            </div>
+            <p class="title"> Semillas de Acelga</p>
+            <a href="" data-id="4" class="btn-add-cart">Comprar</a>
+        </div>
+        <div class="carts">
+            <div>
+                <img src="./images/products/P_5.jpg" alt="">
+                <p><span>19.99</span>$</p>
+            </div>
+            <p class="title">Macetero 50 litros</p>
+            <a href="" data-id="5" class="btn-add-cart">Comprar</a>
+        </div>
+        <div class="carts">
+            <div>
+                <img src="./images/products/P_6.jpg" alt="">
+                <p><span>45.33</span>$</p>
+            </div>
+            <p class="title">Macetero Geometrico</p>
+            <a href="" data-id="6" class="btn-add-cart">Comprar</a>
+        </div>
+        <div class="carts">
+            <div>
+                <img src="./images/products/P_7.jpg" alt="">
+                <p><span>23.99</span>$</p>
+            </div>
+            <p class="title"> Tierra de Hojas 15 litros</p>
+            <a href="" data-id="7" class="btn-add-cart">Comprar</a>
+        </div>
+        <div class="carts">
+            <div>
+                <img src="./images/products/P_8.jpg" alt="">
+                <p><span>50.00</span>$</p>
+            </div>
+            <p class="title"> Macetero 10 litros</p>
+            <a href="" data-id="8" class="btn-add-cart">Comprar</a>
+        </div>
+        <div class="carts">
+            <div>
+                <img src="./images/products/P_7.jpg" alt="">
+                <p><span>23.99</span>$</p>
+            </div>
+            <p class="title"> Tierra de Hojas 15 litros</p>
+            <a href="" data-id="7" class="btn-add-cart">Comprar</a>
+        </div>
+        <div class="carts">
+            <div>
+                <img src="./images/products/P_10.jpg" alt="">
+                <p><span>70.00</span>$</p>
+            </div>
+            <p class="title"> Tierra de Hojas</p>
+            <a href="" data-id="9" class="btn-add-cart">Comprar</a>
+        </div>
+</section>
 
 
 
+<script>
+    function showCart(x) {
+        document.getElementById("products-id").style.display = "block";
+    }
 
-
-    <section class="container">
-        <div class="products">
-            <div class="carts">
-                <div>
-                    <img src="./images/products/P_1.jpg" alt="">
-                    <p><span>5.99</span>$</p>
-                </div>
-                <p class="title">Pack Herramientas de Cultivo</p>
-                <a href="" data-id="1" class="btn-add-cart">Comprar</a>
-            </div>
-            <div class="carts">
-                <div>
-                    <img src="./images/products/P_2.jpg" alt="">
-                    <p><span>6.90</span>$</p>
-                </div>
-                <p class="title"> Fertilizante Fert Plant</p>
-                <a href="" class="btn-add-cart" data-id="2">Comprar</a>
-            </div>
-            <div class="carts">
-                <div>
-                    <img src="./images/products/P_3.jpg" alt="">
-                    <p><span>15.50</span>$</p>
-                </div>
-                <p class="title">Organizador de Herramientas Ajustable</p>
-                <a href="" data-id="3" class="btn-add-cart">Comprar</a>
-            </div>
-            <div class="carts">
-                <div>
-                    <img src="./images/products/P_4.jpg" alt="">
-                    <p><span>4.20</span>$</p>
-                </div>
-                <p class="title"> Semillas de Acelga</p>
-                <a href="" data-id="4" class="btn-add-cart">Comprar</a>
-            </div>
-            <div class="carts">
-                <div>
-                    <img src="./images/products/P_5.jpg" alt="">
-                    <p><span>19.99</span>$</p>
-                </div>
-                <p class="title">Macetero 50 litros</p>
-                <a href="" data-id="5" class="btn-add-cart">Comprar</a>
-            </div>
-            <div class="carts">
-                <div>
-                    <img src="./images/products/P_6.jpg" alt="">
-                    <p><span>45.33</span>$</p>
-                </div>
-                <p class="title">Macetero Geometrico</p>
-                <a href="" data-id="6" class="btn-add-cart">Comprar</a>
-            </div>
-            <div class="carts">
-                <div>
-                    <img src="./images/products/P_7.jpg" alt="">
-                    <p><span>23.99</span>$</p>
-                </div>
-                <p class="title"> Tierra de Hojas 15 litros</p>
-                <a href="" data-id="7" class="btn-add-cart">Comprar</a>
-            </div>
-            <div class="carts">
-                <div>
-                    <img src="./images/products/P_8.jpg" alt="">
-                    <p><span>50.00</span>$</p>
-                </div>
-                <p class="title"> Macetero 10 litros</p>
-                <a href="" data-id="8" class="btn-add-cart">Comprar</a>
-            </div>
-            <div class="carts">
-                <div>
-                    <img src="./images/products/P_7.jpg" alt="">
-                    <p><span>23.99</span>$</p>
-                </div>
-                <p class="title"> Tierra de Hojas 15 litros</p>
-                <a href="" data-id="7" class="btn-add-cart">Comprar</a>
-            </div>
-            <div class="carts">
-                <div>
-                    <img src="./images/products/P_10.jpg" alt="">
-                    <p><span>70.00</span>$</p>
-                </div>
-                <p class="title"> Tierra de Hojas</p>
-                <a href="" data-id="9" class="btn-add-cart">Comprar</a>
-            </div>
-    </section>
-
-
-
-    <script>
-        function showCart(x) {
-            document.getElementById("products-id").style.display = "block";
-        }
-
-        function closeBtn() {
-            document.getElementById("products-id").style.display = "none";
-        }
-    </script>
-    <script src="./custom.js"></script>
+    function closeBtn() {
+        document.getElementById("products-id").style.display = "none";
+    }
+</script>
+<script src="./custom.js"></script>
 </body>
 
 </html>
